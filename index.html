@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="My Temperature Converter">
+        <link rel="icon" href="./assets/" type="image/png">
+        <title>Ayomi's Temperature Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="./assets/style/main.css">
+        <script src="./assets/script/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container flex">
+                <div class="title">
+                    <h1><span>.</span>AYOMI</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="converter">
+                    <h2>Temperature Converter</h2>
+                    <form>
+                        <input type="text" class="temp-input" placeholder="Enter temperature (°C)">
+                        
+                        <div class="options">
+                            <input type="radio" name="conversion" class="to-fahrenheit" checked>
+                            <label for="to-fahrenheit">To Fahrenheit</label>
+
+                            <input type="radio" name="conversion" class="to-celsius">
+                            <label for="to-celsius">To Celsius</label>
+                        </div>
+
+                        <input type="button" class="convert-btn" value="Convert">
+                    </form>
+
+                    <div class="output">
+                        <p>Result:</p>
+                    </div>
+                </section>
+
+                <button class="theme-toggle">
+                    <p>Mode</p>
+                </button>
+            </div>
+        </main>
+    </body>
+</html>

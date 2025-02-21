@@ -1,0 +1,214 @@
+@import url(./reset.css);
+
+:root {
+    --app-bg-dark: #181724;
+    --app-black: #000;
+    --app-bg-light: #f2f2f2;
+    --app-grey: #dddddd;
+    --app-white: #fff;
+    --app-dark-blue: #155697;
+    --app-light-blue: #b6d9ec;
+    --app-semibold: 600;
+    --app-font-size: 16px;
+}
+
+body {
+    font-family: "Inter", "Open Sans", Arial, sans-serif;
+    background-color: var(--app-bg-light);
+    color: var(--app-black);
+    transition: background-color 0.25s ease-in-out;
+}
+.container {
+    width: min(100% - 30px, 1000px);
+    margin-inline: auto;
+}
+
+/*--------------------------*/
+/* Header                   */
+/*--------------------------*/
+
+header {
+    background-color: var(--app-dark-blue);
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1 {
+    color: var(--app-white);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 56px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'Sofia Sans', 'Lato', 'Arial', serif;
+}
+
+.title h1 span {
+    color: #78b9dc;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease-in-out;
+    font-family: 'Changa', 'Lato', 'Arial', serif;
+}
+
+nav ul li a:hover {
+    color: var(--app-light-blue);
+}
+
+nav ul li + li {
+    margin-left: 30px;
+}
+
+/*--------------------------*/
+/* Section                  */
+/*--------------------------*/
+
+.converter {
+    margin-top: 40px;
+    width: 360px;
+    text-align: left;
+}
+
+h2 {
+    color: var(--app-black);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.temp-input {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #626262;
+
+}
+
+.options {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 0px;
+}
+
+label {
+    color: var(--app-black);
+    font-size: 16px;
+}
+
+.convert-btn {
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: var(--app-dark-blue);
+    color: var(--app-white);
+    border: none;
+   
+}
+
+.convert-btn:hover {
+    background-color: var(--app-bg-dark);
+}
+
+/*--------------------------*/
+/* Result                   */
+/*--------------------------*/
+
+.output {
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--app-grey);
+    border-radius: 6px;
+}
+
+/*--------------------------*/
+/* Theme                    */
+/*--------------------------*/
+
+.theme-toggle {
+    width: 100px;
+    height: 40px;
+    background-color: var(--app-bg-dark);
+    color: var(--app-white);
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.theme-toggle:hover {
+    background-color: var(--app-dark-blue);
+}
+
+/*--------------------------*/
+/* Theme                    */
+/*--------------------------*/
+
+.dark-mode {
+    background-color: var(--app-bg-dark);
+    color: var(--app-white);
+    transition: background-color 0.25s ease-in-out;
+}
+
+.dark-mode .converter {
+    background-color: var(--app-bg-dark);
+    color: var(--app-white);
+}
+
+.dark-mode section h2 {
+    color: #fff;
+}
+
+.dark-mode .temp-input {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--app-white);
+}
+
+.dark-mode label {
+    color: var(--app-white);
+}
+
+.dark-mode .output {
+    background-color: #333;
+    color: var(--app-white);
+}
+
+.dark-mode .theme-toggle {
+    background-color: var(--app-light-blue);
+    color: var(--app-black);
+}
